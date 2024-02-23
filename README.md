@@ -18,6 +18,19 @@ Standard and basic structure to assist in the quick start of tests, projects, po
 - ESLint - some rules
 - Prettier and EditorConfig - for consistent code style
 - Nodemon - Simple monitor script for use during development of a Node.js app
+- Jest Testing Framework
+
+
+## Package.json
+
+Available commands
+
+- `test` - Run all tests (src, e2e)
+- `test:src` - Run src tests on path `src`
+- `test:e2e` - Run e2e tests on path `test`
+- `test:watch` - Jest interactive mode
+- `test:cov` - show test coverage information reported in the output
+- `test:debug` - print debugging info about your jest config
 
 
 ## Requisites 
