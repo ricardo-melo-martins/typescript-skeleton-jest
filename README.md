@@ -4,27 +4,45 @@
 
 </div>
 
-# Typescript Skeleton
+# Typescript Skeleton Jest
 
-Standard and basic structure to assist in the quick start of tests, projects, pocs with this technology. 
-
-`*pt-br` Estrutura padrão e básica para auxiliar no início rápido de testes, projetos, pocs com esta tecnologia.
-
+This is a basic framework, a minimalist template using Typescript. It assists me in the quick start to create tests, POC or projects.
 
 ## Features
 
-- Typescript 5.3
-- @types/node - TypeScript definitions for node 20.x 
-- ESLint - some rules
-- Prettier and EditorConfig - for consistent code style
-- Nodemon - Simple monitor script for use during development of a Node.js app
-- Jest Testing Framework
+- <a href="https://www.typescriptlang.org/" target="_blank">TypeScript 5.3+ </a> is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+- <a href="https://eslint.org/" target="_blank">ESLint</a> statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
+- <a href="https://prettier.io/" target="_blank">Prettier</a> is an opinionated code formatter.
+- <a href="https://nodemon.io/" target="_blank">Nodemon</a> is a utility, that will monitor for any changes in your source and automatically restart your server. Perfect for development.
+- <a href="https://www.npmjs.com/package/@types/node" target="_blank">@types/node</a> - This package contains type definitions for node (https://nodejs.org/). 
+- <a href="https://jestjs.io/" target="_blank">Jest</a> is a delightful JavaScript Testing Framework with a focus on simplicity.
 
 
 ## Package.json
 
-Available commands
+Available commands for:
 
+### Build
+- `build` -  Build one or more projects and their dependencies
+- `build:watch` - Watch input files 
+- `build:release` - Build specified settings on `tsconfig.release.json`
+- `prebuild` - Checks possibility
+
+### Execution
+
+- `start` - Run static compiled on path `dist`
+- `start:dev` - Run nodemon on path `src`
+- `start:prod` - Run production env on path `dist`
+
+### Code style
+- `format` - Prettier format code style
+- `lint` - ESLint code format verify
+- `lint:fix` - ESLint verify and fix
+
+### Clean
+- `clean` - Remove cache, coverage and dist folder
+
+### Test
 - `test` - Run all tests (src, e2e)
 - `test:src` - Run src tests on path `src`
 - `test:e2e` - Run e2e tests on path `test`
@@ -33,17 +51,41 @@ Available commands
 - `test:debug` - print debugging info about your jest config
 
 
-## Requisites 
+## System requirements
 
-- Typescript Cli 
-- Node > 20.x
-
-## Author
-
-Created and maintained with fun and :heart: by [![Github](https://img.shields.io/badge/-ricardo%20melo%20martins-000?style=plastic&logo=github)](https://github.com/ricardo-melo-martins)
+- <a href="https://nodejs.org/en/download" target="blank">Node</a> 20+
+- <a href="https://www.typescriptlang.org/download" target="blank">Typescript Cli</a>
+- <a href="https://code.visualstudio.com/" target="blank">Vscode</a> <sup><sub>`(Optional)`</sub></sup> This template has productivity-focused settings, snippets, and extensions.
 
 ## License
 
-[![License](https://img.shields.io/badge/license-MIT-green?style=plastic)](LICENSE.md)
+Typescript Skeleton Jest is [MIT licensed](LICENSE).
 
+## Author
 
+Created with fun by [Ricardo Melo Martins](https://github.com/ricardo-melo-martins), Thanks! :heart:.
+
+<a href="https://nodejs.org/" target="blank" alt="NodeJs">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="30" />
+        </a>
+<a href="https://www.typescriptlang.org/" target="blank" alt="Typescript">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="30" />
+        </a>
+<a href="https://eslint.org/" target="blank" alt="ESLint">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg" width="30" />
+        </a>
+<a href="https://nodemon.io/" target="blank" alt="Nodemon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodemon/nodemon-original.svg" width="30" />
+        </a>
+<a href="https://prettier.io/" target="blank" alt="Prettier">
+          <img src="https://prettier.io/icon.png" width="30" />
+        </a>
+<a href="https://www.npmjs.com/" target="blank" alt="Npmjs">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" width="30" />
+        </a>
+<a href="https://code.visualstudio.com/" target="blank" alt="Vscode">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="30" />
+        </a>
+<a href="https://jestjs.io/" target="blank" alt="Jest">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" width="30" />
+        </a>         

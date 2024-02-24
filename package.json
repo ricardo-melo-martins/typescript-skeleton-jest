@@ -1,6 +1,6 @@
 {
-  "name": "typescript-skeleton",
-  "displayName": "typescript-skeleton",
+  "name": "typescript-skeleton-jest",
+  "displayName": "typescript-skeleton-jest",
   "description": "A minimalistic skeleton template for create other projects",
   "version": "0.0.1",
   "author": "RMM <ricardo-melo-martins@users.noreply.github.com>",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ricardo-melo-martins/typescript-skeleton"
+    "url": "https://github.com/ricardo-melo-martins/typescript-skeleton-jest"
   },
   "main": "index.js",
   "scripts": {
@@ -16,13 +16,12 @@
     "start:dev": "set NODE_ENV=development && npx nodemon",
     "start:prod": "set NODE_ENV=production && npm run start",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "compile": "tsc -p ./",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
     "lint:fix": "npm run lint -- --fix",
     "watch": "tsc -watch -p ./",
     "clean": "rimraf dist coverage",
     "prebuild": "npm run lint:fix",
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json",
     "build:watch": "tsc -w -p tsconfig.json",
     "build:release": "npm run clean && tsc -p tsconfig.release.json",
     "prettier": "prettier --config .prettierrc --write .",
